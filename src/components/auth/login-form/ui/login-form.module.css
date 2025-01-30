@@ -1,0 +1,8 @@
+.controlsContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+.form {
+  width: 100%;
+}
