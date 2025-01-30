@@ -8,7 +8,11 @@ export const AuthForm = () => {
   return (
     <div className={styles.authForm}>
       <AuthTabs activeTab={activeTab} onTabChange={setActiveTab} />
-      {activeTab === "login" ? <LoginForm /> : <RegisterForm />}
+      {activeTab === "login" ? (
+        <LoginForm data-testid="login-form" />
+      ) : (
+        <RegisterForm data-testid="register-form" />
+      )}
     </div>
   );
 };

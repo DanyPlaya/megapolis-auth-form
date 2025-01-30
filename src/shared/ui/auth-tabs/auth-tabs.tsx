@@ -7,6 +7,7 @@ interface AuthTabsProps {
 export const AuthTabs = ({ activeTab, onTabChange }: AuthTabsProps) => (
   <div className={styles.tabsContainer}>
     <button
+      data-testid="tab-login"
       type="button"
       className={`${styles.tab} ${activeTab === "login" ? styles.active : ""}`}
       onClick={() => onTabChange("login")}
@@ -15,6 +16,7 @@ export const AuthTabs = ({ activeTab, onTabChange }: AuthTabsProps) => (
     </button>
     <button
       type="button"
+      data-testid="tab-register"
       className={`${styles.tab} ${
         activeTab === "register" ? styles.active : ""
       }`}
