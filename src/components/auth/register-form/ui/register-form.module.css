@@ -2,4 +2,15 @@
   display: flex;
   justify-content: space-between;
   align-items: end;
+  gap: 40px;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+@media (max-width: 1023px) {
+  .controlsContainer {
+    flex-direction: column;
+  }
 }

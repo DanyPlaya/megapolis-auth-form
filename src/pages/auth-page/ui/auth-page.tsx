@@ -8,7 +8,7 @@ export const AuthPage = () => {
       <img
         className={styles.townImage}
         src={TownImage}
-        alt="Фоновое изображение"
+        alt="Изображение зданий"
       />
     </div>
   );

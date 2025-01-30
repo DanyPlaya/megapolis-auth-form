@@ -22,7 +22,7 @@
 .slider {
   position: relative;
   display: inline-block;
-  width: 44px;
+  width: 40px;
 
   height: 24px;
   background-color: white;
@@ -34,21 +34,20 @@
 .slider:before {
   content: "";
   position: absolute;
-  left: 2px;
+  left: 1px;
   top: 2px;
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   background-color: #757575;
   border-radius: 50%;
   transition: transform 0.3s ease;
 }
 
 .hiddenCheckbox:checked + .slider:before {
-  transform: translateX(20px);
+  transform: translateX(18px);
 }
 
 .labelText {
   color: #1e1e1e;
-  font-size: 14px;
-  font-weight: 400;
+  text-wrap-mode: nowrap;
 }

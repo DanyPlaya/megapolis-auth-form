@@ -1,0 +1,11 @@
+.wrapper {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.logoutButton {
+  width: 100px;
+  height: 40px;
+}
