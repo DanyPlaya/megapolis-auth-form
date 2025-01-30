@@ -4,7 +4,6 @@ import { fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import { AuthForm } from "../ui/auth-form";
 
-// Мокаем CSS-модуль с помощью Vitest
 vi.mock("../ui/auth-form.module.css", () => ({
   default: {
     active: "active",
