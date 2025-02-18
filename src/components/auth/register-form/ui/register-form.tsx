@@ -9,6 +9,7 @@ export const RegisterForm = () => {
   const [date, setDate] = useState<string>("");
   const handleFocus = (event: React.ChangeEvent<HTMLInputElement>) => {
     event.target.type = "date";
+    console.log();
   };
 
   const handleBlur = (event: React.ChangeEvent<HTMLInputElement>) => {
